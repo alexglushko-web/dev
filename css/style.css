@@ -411,7 +411,6 @@ p
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 0 0;
     grid-template-areas: 'prev list next' 'dots dots dots';
 }
 
@@ -1139,6 +1138,14 @@ div[class$='__container']
     }
 }
 
+@media (min-width: 536.1px)
+{
+    .team__toggle
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 1430px)
 {
     .startpage
@@ -1377,6 +1384,23 @@ div[class$='__container']
         padding: 80px 24px 60px !important;
     }
 
+    .path__slider
+    {
+        grid-template-columns: 50px auto 50px;
+    }
+
+    .path__toggle
+    {
+        position: relative;
+
+        margin: 0;
+    }
+
+    .path__toggle._prev
+    {
+        margin-left: auto;
+    }
+
     .team__slider
     {
         display: -webkit-box;
@@ -1435,6 +1459,13 @@ div[class$='__container']
     .contacts
     {
         background-image: url('./../img/background/projector.webp');
+    }
+}
+
+@media (min-width: 536.1px)
+{
+    @supports (-webkit-appearance:none)
+    {
     }
 }
 
