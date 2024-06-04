@@ -26,6 +26,19 @@ window.addEventListener('load', ()=> {
         appendDots: $('.path__dots'),
         infinite: true,
     })
+    if (window.matchMedia('(max-width: 536px)').matches){
+        $('.team__list').slick({
+            arrows : true,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.team__toggle._prev'),
+            nextArrow: $('.team__toggle._next'),
+            // appendArrows: $('.path__slider'),
+            // appendDots: $('.path__dots'),
+            infinite: true,
+        })
+    }
 
 //     // === INPUT MASK === \\\
 //     // $('._birthday').mask("99.99.9999")

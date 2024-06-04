@@ -528,26 +528,7 @@ p
 
 .path__toggle
 {
-    line-height: 1;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 30px;
-    height: 30px;
     margin: 30px;
-
-    color: #222;
-    border-radius: 50%;
-    background-color: #e8e8e8;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .path__dots
@@ -1039,6 +1020,29 @@ p
     align-items: center;
 }
 
+.slider__toggle
+{
+    line-height: 1;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 30px;
+    height: 30px;
+
+    color: #222;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .dropdown
 {
     position: relative;
@@ -1061,7 +1065,7 @@ p
 
 .dropdown__title *
 {
-    color: #005db4;
+    color: blue-color;
 }
 
 .dropdown__wrapper
@@ -1216,12 +1220,19 @@ div[class$='__container']
         padding: 80px 0;
     }
 
+    .team__slider,
+    .team__list
+    {
+        width: 100%;
+    }
+
     .team__list
     {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
 
+        padding: 0;
         padding: 0;
 
         -ms-flex-wrap: wrap;
@@ -1342,6 +1353,63 @@ div[class$='__container']
         --containerIndents: 24px;
     }
 }
+
+@media (max-width: 536px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+
+    h2
+    {
+        font-size: 32px;
+    }
+
+    h4
+    {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .startpage__container
+    {
+        padding: 80px 24px 60px !important;
+    }
+
+    .team__slider
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .team__toggle
+    {
+        position: absolute;
+        z-index: 1;
+
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .team__toggle._prev
+    {
+        left: -12px;
+    }
+
+    .team__toggle._next
+    {
+        right: -12px;
+    }
+}
 @supports (-webkit-appearance:none)
 {
     .startpage__container
@@ -1382,6 +1450,13 @@ div[class$='__container']
 }
 
 @media (max-width: 768px)
+{
+    @supports (-webkit-appearance:none)
+    {
+    }
+}
+
+@media (max-width: 536px)
 {
     @supports (-webkit-appearance:none)
     {
