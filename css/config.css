@@ -28,71 +28,10 @@ img
     height: 100%;
 }
 
-@font-face
-{
-    font-family: 'icons';
-    font-weight: '400';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/icons.woff') format('woff'), url('../fonts/icons.woff2') format('woff2');
-}
-
-@font-face
-{
-    font-family: 'Bebas Neue';
-    font-weight: '400';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/BebasNeue-Regular.woff') format('woff'), url('../fonts/BebasNeue-Regular.woff2') format('woff2');
-}
-
-@font-face
-{
-    font-family: 'Bebas Neue';
-    font-weight: '700';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/BebasNeue-Bold.woff') format('woff'), url('../fonts/BebasNeue-Bold.woff2') format('woff2');
-}
-
-@font-face
-{
-    font-family: 'sf-pro-text';
-    font-weight: '600';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/sf-pro-text-semibold.woff') format('woff'), url('../fonts/sf-pro-text-semibold.woff2') format('woff2');
-}
-
-@font-face
-{
-    font-family: 'sf-pro-display';
-    font-weight: '500';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/sf-pro-display-medium.woff') format('woff'), url('../fonts/sf-pro-display-medium.woff2') format('woff2');
-}
-
-@font-face
-{
-    font-family: 'sf-pro-text';
-    font-weight: '400';
-    font-style: 'normal';
-
-    font-display: swap;
-    src: url('../fonts/sf-pro-text-regular.woff') format('woff'), url('../fonts/sf-pro-text-regular.woff2') format('woff2');
-}
-
 *
 {
-    font-family: 'Inter';
     font-weight: 400;
-    line-height: 100%;
+    line-height: 125%;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -168,6 +107,11 @@ button
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 1px;
+}
+
+.slick-slide
+{
+    height: inherit !important;
 }
 @supports (-webkit-appearance:none)
 {
