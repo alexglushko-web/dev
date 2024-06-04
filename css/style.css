@@ -812,6 +812,7 @@ p
     display: flex;
 
     width: 300px;
+    max-width: 100%;
     padding: 16px;
 
     color: #fff;
@@ -1296,9 +1297,21 @@ div[class$='__container']
         padding: 80px 24px 60px !important;
     }
 
+    .startpage__title
+    {
+        -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+        align-items: flex-end !important;
+    }
+
+    .startpage__logo
+    {
+        margin-bottom: auto;
+    }
+
     .characteristics__blocks
     {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .characteristics__title
@@ -1337,6 +1350,11 @@ div[class$='__container']
         padding: 50px 0;
     }
 
+    .points
+    {
+        gap: 30px;
+    }
+
     .points__item
     {
         gap: 20px;
@@ -1370,23 +1388,50 @@ div[class$='__container']
 {
     h1
     {
-        font-size: 40px;
+        font-size: 32px;
+
+        letter-spacing: 7px;
     }
 
     h2
     {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     h4
     {
-        font-size: 26px;
+        font-size: 22px;
         line-height: 1.25;
+    }
+
+    p
+    {
+        font-size: 18px;
+    }
+
+    .startpage__logo
+    {
+        min-width: 70px;
     }
 
     .startpage__container
     {
         padding: 80px 24px 60px !important;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 0 45px;
+    }
+
+    .actuality__list
+    {
+        padding: 40px 0;
+    }
+
+    .actuality__title
+    {
+        margin-left: 0;
     }
 
     .path__slider
@@ -1406,6 +1451,21 @@ div[class$='__container']
         margin-left: auto;
     }
 
+    .path__dots
+    {
+        margin-top: 0;
+    }
+
+    .found__pic
+    {
+        width: 90%;
+    }
+
+    .team
+    {
+        padding: 50px 0;
+    }
+
     .team__slider
     {
         display: -webkit-box;
@@ -1418,6 +1478,11 @@ div[class$='__container']
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+
+    .team__title
+    {
+        margin-bottom: 32px;
     }
 
     .team__toggle
@@ -1434,6 +1499,12 @@ div[class$='__container']
     .team__toggle._next
     {
         right: -12px;
+    }
+
+    .contacts__list,
+    .contacts__item
+    {
+        width: 100%;
     }
 
     .slider__toggle
