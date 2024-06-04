@@ -1339,15 +1339,20 @@ div[class$='__container']
 
     .points__item
     {
-        gap: 30px;
+        gap: 20px;
+    }
+
+    .points__name
+    {
+        margin-bottom: 10px;
     }
 
     .points__value
     {
-        font-size: 48px;
+        font-size: 26px;
 
-        min-width: 70px;
-        min-height: 70px;
+        min-width: 40px;
+        min-height: 40px;
     }
 
     .points__desc
@@ -1375,7 +1380,7 @@ div[class$='__container']
 
     h4
     {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 1.25;
     }
 
