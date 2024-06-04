@@ -1,5 +1,38 @@
 'use strict'
 window.addEventListener('load', ()=> {
+    // === HEADER === \\\
+    let header = document.querySelector('.header'),
+        burger = document.querySelector('.burger'),
+        menu = document.querySelector('.menu'),
+        // menuClose = menu.querySelector('.menu__close'),
+        menuItems = menu.querySelectorAll('.menu__item')
+    
+
+    burger.addEventListener('click', toggleMenu)
+    menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu)
+    })
+    // menuClose.addEventListener('click', closeMenu)
+    function toggleMenu() {
+        header.classList.toggle('_shadow')
+        menu.classList.toggle('_active')
+        burger.classList.toggle('_active')
+        document.body.classList.toggle('lock')
+    }
+    function closeMenu() {
+        header.classList.remove('_shadow')
+        menu.classList.remove('_active')
+        burger.classList.remove('_active')
+        document.body.classList.remove('lock')
+    }
+    document.addEventListener('click', (e) => {
+        let withinBoundaries = e.composedPath().includes(menu);
+        if ( !withinBoundaries && !e.composedPath().includes(burger)) {
+            closeMenu()
+        }
+    })
+
+
     // === TITLES === \\\
     let titles = document.querySelectorAll('.title')
 
