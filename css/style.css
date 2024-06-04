@@ -1395,9 +1395,6 @@ div[class$='__container']
     {
         position: absolute;
         z-index: 1;
-
-        width: 50px !important;
-        height: 50px !important;
     }
 
     .team__toggle._prev
@@ -1408,6 +1405,12 @@ div[class$='__container']
     .team__toggle._next
     {
         right: -12px;
+    }
+
+    .slider__toggle
+    {
+        width: 40px;
+        height: 40px;
     }
 }
 @supports (-webkit-appearance:none)
