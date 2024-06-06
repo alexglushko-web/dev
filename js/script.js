@@ -82,18 +82,21 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
     scales.forEach(scale => {
         let line = scale.querySelector('.scale__line'),
-            value = scale.querySelector('.scale__value')
-        noUiSlider.create(line, {
-            start: [50],
-            connect: true,
-            range: {
-                'min': 0,
-                'max': 100
-            }
-        });
-        line.noUiSlider.on('update', function(values, handle) {
-            value.innerHTML = parseInt(values[0]) + '%'
-        });
+            value = scale.querySelector('.scale__value'),
+            marker = scale.querySelector('.scale__marker')
+        
+        marker.addEventListener('mousedown', ()=>{
+            console.log(event.clientX);
+            console.log(event.clientY);
+        })
+        marker.addEventListener('mouseover', (event)=>{
+            console.log(event.clientX);
+            console.log(event.clientY);
+        })
+        marker.addEventListener('mouseup', (event)=>{
+            console.log(event.clientX);
+            console.log(event.clientY);
+        })
     })
 
     // === FILES === \\\
