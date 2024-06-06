@@ -80,23 +80,29 @@ window.addEventListener('DOMContentLoaded', ()=> {
     
     let scales = document.querySelectorAll('.scale')
 
+    console.log('line.value');
     scales.forEach(scale => {
-        let line = scale.querySelector('.scale__line'),
-            value = scale.querySelector('.scale__value'),
-            marker = scale.querySelector('.scale__marker')
+        let line  = scale.querySelector('.scale__line')
+
+        line.addEventListener('change', ()=>{
+            console.log(line.value);
+        })
+        // let line = scale.querySelector('.scale__line'),
+        //     value = scale.querySelector('.scale__value'),
+        //     marker = scale.querySelector('.scale__marker')
         
-        marker.addEventListener('mousedown', ()=>{
-            console.log(event.clientX);
-            console.log(event.clientY);
-        })
-        marker.addEventListener('mouseover', (event)=>{
-            console.log(event.clientX);
-            console.log(event.clientY);
-        })
-        marker.addEventListener('mouseup', (event)=>{
-            console.log(event.clientX);
-            console.log(event.clientY);
-        })
+        // marker.addEventListener('mousedown', ()=>{
+        //     console.log(event.clientX);
+        //     console.log(event.clientY);
+        // })
+        // marker.addEventListener('mouseover', (event)=>{
+        //     console.log(event.clientX);
+        //     console.log(event.clientY);
+        // })
+        // marker.addEventListener('mouseup', (event)=>{
+        //     console.log(event.clientX);
+        //     console.log(event.clientY);
+        // })
     })
 
     // === FILES === \\\
