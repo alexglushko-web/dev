@@ -82,14 +82,13 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
     console.log('line.value');
     scales.forEach(scale => {
-        let line  = scale.querySelector('.scale__line')
+        let line = scale.querySelector('.scale__line'),
+            value = scale.querySelector('.scale__value')
+        // let marker = scale.querySelector('.scale__marker')
 
-        line.addEventListener('change', ()=>{
-            console.log(line.value);
+        line.addEventListener('input', ()=>{
+            value.innerHTML = line.value + '%'
         })
-        // let line = scale.querySelector('.scale__line'),
-        //     value = scale.querySelector('.scale__value'),
-        //     marker = scale.querySelector('.scale__marker')
         
         // marker.addEventListener('mousedown', ()=>{
         //     console.log(event.clientX);
