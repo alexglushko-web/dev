@@ -26,46 +26,46 @@
 
 .leader-line-mask-bg-rect
 {
-    fill: #fff;
+    fill: white;
 }
 
 .leader-line-caps-mask-anchor,
 .leader-line-caps-mask-marker-shape
 {
-    fill: #000;
+    fill: black;
 }
 
 .leader-line-caps-mask-anchor
 {
-    stroke: #000;
+    stroke: black;
 }
 
 .leader-line-caps-mask-line,
 .leader-line-plugs-face
 {
-    stroke: rgba(0,0,0,0) ;
+    stroke: rgba(0, 0, 0, 0);
 }
 
 .leader-line-line-mask-shape
 {
-    stroke: #fff;
+    stroke: white;
 }
 
 .leader-line-line-outline-mask-shape
 {
-    stroke: #000;
+    stroke: black;
 }
 
 .leader-line-plug-mask-shape
 {
-    fill: #fff;
-    stroke: #000;
+    fill: white;
+    stroke: black;
 }
 
 .leader-line-plug-outline-mask-shape
 {
-    fill: #000;
-    stroke: #fff;
+    fill: black;
+    stroke: white;
 }
 
 .leader-line-areaAnchor

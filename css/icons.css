@@ -24,11 +24,75 @@ i
     -moz-osx-font-smoothing: grayscale;
 }
 
-i::before
+.icon-arrow-bottom:before
+{
+    content: '\e908';
+}
+
+.icon-qiwi:before
+{
+    content: '\e900';
+
+    color: #3e9cdc;
+}
+
+.icon-webmoney:before
+{
+    content: '\e901';
+
+    color: #3e9cdc;
+}
+
+.icon-ym .path1:before
+{
+    content: '\e902';
+
+    color: #3e9cdc;
+}
+
+.icon-ym .path2:before
+{
+    margin-left: -1em;
+
+    content: '\e903';
+
+    opacity: .2;
+    color: black;
+}
+
+.icon-ym .path3:before
+{
+    margin-left: -1em;
+
+    content: '\e904';
+
+    color: #231f20;
+}
+
+.icon-ym
 {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+}
+
+.icon-vk:before
+{
+    content: '\e905';
+
+    color: #3e9cdc;
+}
+
+.icon-file:before
+{
+    content: '\e906';
+}
+
+.icon-mail:before
+{
+    content: '\e907';
+
+    color: #3e9cdc;
 }
 @supports (-webkit-appearance:none)
 {

@@ -28,10 +28,70 @@ img
     height: 100%;
 }
 
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'icons';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/icons.woff') format('woff'), url('../fonts/icons.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-SemiBold.woff') format('woff'), url('../fonts/Lato-SemiBold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2');
+}
+
 *
 {
     font-weight: 400;
-    line-height: 125%;
+    line-height: 100%;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -70,21 +130,6 @@ textarea
     outline: none;
 }
 
-a,
-span
-{
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-
-    position: relative;
-
-    letter-spacing: inherit;
-
-    color: inherit;
-}
-
 button
 {
     cursor: pointer;
@@ -102,16 +147,6 @@ button
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    gap: 1px;
-}
-
-.slick-slide
-{
-    height: inherit !important;
 }
 @supports (-webkit-appearance:none)
 {
