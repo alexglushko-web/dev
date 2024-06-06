@@ -531,6 +531,9 @@ section
 
 .form__input
 {
+    font-size: 18px;
+    line-height: 21.6px;
+
     width: 100%;
     padding: 12px 10px;
 
@@ -637,6 +640,9 @@ section
 
 .file
 {
+    font-size: 18px;
+    line-height: 21.6px;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -694,6 +700,9 @@ section
 
 .dropdown__title
 {
+    font-size: 18px;
+    line-height: 21.6px;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,6 +737,9 @@ section
 
 .dropdown__item
 {
+    font-size: 18px;
+    line-height: 21.6px;
+
     padding: 12px 10px;
 
     cursor: pointer;
@@ -789,6 +801,9 @@ section
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
 }
 
 .contacts__item:hover
@@ -803,6 +818,8 @@ section
 
 .contacts__icon
 {
+    font-size: 20px;
+
     margin-right: 10px;
 }
 
@@ -885,6 +902,23 @@ section
     {
         margin-top: 153px;
         margin-bottom: 253px;
+    }
+
+    .footer__container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__block
+    {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .footer ._copyright
+    {
+        grid-column: span 1;
     }
 
     .steps
@@ -1112,6 +1146,12 @@ section
         display: none;
     }
 
+    .startpage__desc
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     .startpage__buttons
     {
             flex-direction: column;
@@ -1138,30 +1178,32 @@ section
         padding: 31px 0;
     }
 
-    .footer__container
+    .footer__contacts
     {
-        grid-template-columns: 1fr;
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
     }
 
-    .footer__block
+    .footer ._copyright
     {
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
+        grid-column: span 1;
+    }
+
+    .footer__contacts
+    {
+        gap: 24px;
     }
 
     .footer__text
     {
         font-size: 18px;
         line-height: 24px;
-    }
-
-    .footer ._copyright
-    {
-        grid-column: span 1;
     }
 
     .logo
@@ -1253,19 +1295,6 @@ section
     .order__steps
     {
         margin-bottom: 25px;
-    }
-
-    .footer__contacts
-    {
-            flex-direction: column;
-
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        gap: 24px;
     }
 
     .footer__text

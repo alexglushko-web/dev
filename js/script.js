@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
         }
     })
 
-    // === LEADER LINES === \\\
+    // === LINES === \\\
     let steps = document.querySelector('.steps'),
         stepsPics = document.querySelectorAll('.steps__pic')
     window.addEventListener('resize', addLines)
@@ -76,12 +76,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
         }
     }; addLines()
 
-    // new LeaderLine(stepsPics[0], stepsPics[2], {
-    //     size: 8,
-    //     dash: {len: 4, gap: 24},
-    //     shape: 'circle', points: [[10, 15], ['90%', '70%'], [10, '80%']]
-    //   });
-
     // === SCALE === \\\
     
     let scales = document.querySelectorAll('.scale')
@@ -111,31 +105,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
             text.innerHTML = input.files[0].name
         })
     })
-
-    // === SLICK SLIDER === \\\
-    // $().slick({
-        // arrows : true,
-        // dots: true,
-        // appendDots: categoriesDots,
-        // slidesToShow: 4,
-        // prevArrow: '<button class="toggle__btn _prev"><i class="icon-arrow-left"></i></button>',
-        // nextArrow: '<button class="toggle__btn _next"><i class="icon-arrow-right"></i></button>',
-        // infinite: false,
-        // responsive: [
-        //     {
-        //       breakpoint: 768.1,
-        //       settings: {
-        //           slidesToShow: 2,
-        //       }
-        //     },
-        //     {
-        //       breakpoint: 360.1,
-        //       settings: {
-        //           slidesToShow: 1,
-        //       }
-        //     }
-        // ]
-    // })
 
     // === DROPDOWN === \\
     let dropdowns = document.querySelectorAll('.dropdown') 
@@ -195,46 +164,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
         }
         status ? alert("Форма отправлена") : ''
     }
-    // === TABS === \\
-    // let tabs = document.querySelectorAll('.tabs')
-    // tabs.forEach(item => {
-    //     let tabsTitles = item.querySelectorAll('.tabs__title'),
-    //         tabsItems = item.querySelectorAll('.tabs__item')
-
-    //     tabsTitles.forEach(title => {
-    //         title.addEventListener('click', ()=>{
-    //             for (let n = 0; n < tabsTitles.length; n++){
-    //                 if (tabsTitles[n] == title){
-    //                     tabsTitles[n].classList.add('_active')
-    //                     tabsItems[n].classList.add('_active')
-    //                 }
-    //                 else {
-    //                     tabsTitles[n].classList.remove('_active')
-    //                     tabsItems[n].classList.remove('_active')
-    //                 }
-    //             }
-    //         })
-    //     })
-    // })
-
-    // === RADIO BUTTONS === \\
-    // let radios = document.querySelectorAll('.radio')
-
-    // radios.forEach(item => {radio(item)})
-    // function radio(radio) {
-    //     let radioItems = radio.querySelectorAll('.radio__item')
-    //     radioItems.forEach(item =>{
-    //         item.addEventListener('click', ()=>{
-    //             radioItems.forEach(i => {i.classList.remove('_active')})
-    //             item.classList.add('_active')
-    //         })
-    //     })
-    // }
-
-    // === INPUT MASK === \\\
-    // $(elem).mask("9999 9999 9999 9999")
     
-    // === CHECK EMAIL === \\\
     function checkEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!re.test(email.value)){
@@ -266,15 +196,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
                     scale.style.gridColumn = 'span 2'
                 }
             })
-            
-        }
-        if (window.matchMedia('(max-width: 768px)').matches){
-            
-        }
-        if (window.matchMedia('(max-width: 576px)').matches){
-            
-        }
-        if (window.matchMedia('(max-width: 360px)').matches){
             
         }
     };
