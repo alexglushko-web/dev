@@ -1175,6 +1175,18 @@ section
         padding-top: 8px;
     }
 
+    .burger
+    {
+        --height: 18px;
+    }
+
+    .burger::before,
+    .burger div,
+    .burger::after
+    {
+        width: 28px;
+    }
+
     .btn
     {
         font-size: 16px;
@@ -1237,11 +1249,6 @@ section
         padding: 45px 0;
     }
 
-    .header
-    {
-        padding: 14px 0;
-    }
-
     .startpage__info
     {
         margin-top: 80px;
@@ -1273,12 +1280,6 @@ section
         line-height: 20px;
     }
 
-    .logo
-    {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
     .menu
     {
         width: 100vw;
@@ -1289,16 +1290,10 @@ section
         font-size: 20px;
     }
 
-    .burger
+    .btn
     {
-        --height: 18px;
-    }
-
-    .burger::before,
-    .burger div,
-    .burger::after
-    {
-        width: 24px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .steps__pic
@@ -1331,6 +1326,13 @@ section
     .form
     {
         gap: 15px;
+    }
+
+    .form__btn
+    {
+        padding: 10px;
+
+        text-transform: none;
     }
 
     .scale
