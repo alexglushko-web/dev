@@ -1,15 +1,5 @@
 @font-face
 {
-    font-family: 'Lato';
-    font-weight: 700;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.woff2') format('woff2');
-}
-
-@font-face
-{
     font-family: 'icons';
     font-weight: 400;
     font-style: normal;
@@ -20,12 +10,22 @@
 
 @font-face
 {
-    font-family: 'Lato';
-    font-weight: 900;
+    font-family: 'Raleway';
+    font-weight: 800;
     font-style: normal;
 
     font-display: swap;
-    src: url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.woff2') format('woff2');
+    src: url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.woff2') format('woff2');
 }
 
 @font-face
@@ -50,12 +50,12 @@
 
 @font-face
 {
-    font-family: 'Raleway';
-    font-weight: 800;
+    font-family: 'Lato';
+    font-weight: 900;
     font-style: normal;
 
     font-display: swap;
-    src: url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2');
+    src: url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.woff2') format('woff2');
 }
 @supports (-webkit-appearance:none)
 {

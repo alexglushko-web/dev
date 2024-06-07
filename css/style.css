@@ -466,6 +466,11 @@ section
     align-items: center;
 }
 
+.steps__img
+{
+    max-width: 38px;
+}
+
 .steps__name
 {
     font-size: 16px;
