@@ -1,3 +1,251 @@
+img
+{
+    max-width: 100%;
+    height: auto;
+
+    vertical-align: middle;
+}
+
+.video
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video iframe,
+.video object,
+.video embed
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+*
+{
+    font-weight: 400;
+    line-height: 100%;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    border-spacing: unset;
+    border-collapse: separate;
+    list-style-type: none;
+
+    -webkit-transition: .4s;
+         -o-transition: .4s;
+            transition: .4s;
+    text-decoration: none;
+
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    scroll-behavior: smooth;
+}
+
+a,
+input,
+button,
+textarea
+{
+    display: inline-block;
+
+    outline: none;
+}
+
+button
+{
+    cursor: pointer;
+
+    background: none;
+}
+
+.slick-list
+{
+    overflow: hidden;
+}
+
+.slick-track
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@font-face
+{
+    font-family: 'icons';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/icons.woff') format('woff'), url('../fonts/icons.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-SemiBold.woff') format('woff'), url('../fonts/Lato-SemiBold.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'icons';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/icons.eot?aa9m0j');
+    src: url('fonts/icons.eot?aa9m0j#iefix') format('embedded-opentype'), url('fonts/icons.ttf?aa9m0j') format('truetype'), url('fonts/icons.woff?aa9m0j') format('woff'), url('fonts/icons.svg?aa9m0j#icons') format('svg');
+    font-display: block;
+}
+
+i
+{
+    font-family: 'icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: never;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-bottom:before
+{
+    content: '\e908';
+}
+
+.icon-qiwi:before
+{
+    content: '\e900';
+
+    color: #3e9cdc;
+}
+
+.icon-webmoney:before
+{
+    content: '\e901';
+
+    color: #3e9cdc;
+}
+
+.icon-ym .path1:before
+{
+    content: '\e902';
+
+    color: #3e9cdc;
+}
+
+.icon-ym .path2:before
+{
+    margin-left: -1em;
+
+    content: '\e903';
+
+    opacity: .2;
+    color: black;
+}
+
+.icon-ym .path3:before
+{
+    margin-left: -1em;
+
+    content: '\e904';
+
+    color: #231f20;
+}
+
+.icon-ym
+{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.icon-vk:before
+{
+    content: '\e905';
+
+    color: #3e9cdc;
+}
+
+.icon-file:before
+{
+    content: '\e906';
+}
+
+.icon-mail:before
+{
+    content: '\e907';
+
+    color: #3e9cdc;
+}
+
 *
 {
     font-family: Lato !important;
