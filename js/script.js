@@ -80,28 +80,13 @@ window.addEventListener('DOMContentLoaded', ()=> {
     
     let scales = document.querySelectorAll('.scale')
 
-    console.log('line.value');
     scales.forEach(scale => {
         let line = scale.querySelector('.scale__line'),
             value = scale.querySelector('.scale__value')
-        // let marker = scale.querySelector('.scale__marker')
 
         line.addEventListener('input', ()=>{
             value.innerHTML = line.value + '%'
         })
-        
-        // marker.addEventListener('mousedown', ()=>{
-        //     console.log(event.clientX);
-        //     console.log(event.clientY);
-        // })
-        // marker.addEventListener('mouseover', (event)=>{
-        //     console.log(event.clientX);
-        //     console.log(event.clientY);
-        // })
-        // marker.addEventListener('mouseup', (event)=>{
-        //     console.log(event.clientX);
-        //     console.log(event.clientY);
-        // })
     })
 
     // === FILES === \\\
@@ -195,7 +180,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
             let forms = document.querySelectorAll('form.form')
             forms.forEach(form => {
                 let scale = form.querySelector('._scale'),
-                    submit = form.querySelector('._submit'),
                     fields = form.querySelectorAll('.form__field'),
                     countCols = (getComputedStyle(form).gridTemplateColumns.match(/px/g) || []).length
 
