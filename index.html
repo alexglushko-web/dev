@@ -106,7 +106,7 @@
         <div class="form__field _system">
           <div class="dropdown _abs">
             <span class="dropdown__title">
-              <span class="dropdown__title_text">Выберите тип системы</span>
+              <span class="dropdown__title_text" name="form_system">Выберите тип системы</span>
               <i class="dropdown__icon icon-arrow-bottom"></i>
             </span>
             <div class="dropdown__wrapper">
@@ -120,26 +120,22 @@
           </div>
         </div>
         <div class="form__field _email">
-          <input placeholder="Ваш e-mail" type="text" class="form__input _required">
+          <input placeholder="Ваш e-mail" name="form_email" type="text" class="form__input _required">
         </div>
         <div class="form__field _name">
-          <input placeholder="Ваше имя" type="text" class="form__input _required">
+          <input placeholder="Ваше имя" name="form_name" type="text" class="form__input _required">
         </div>
         <div class="form__field _scale scale">
           <span class="scale__title">Sed ut perspiciatis, unde omnis iste natus</span>
           <div class="scale__value">50%</div>
-          <!-- <div class="scale__line">
-              <div class="scale__marker"></div>
-            </div> -->
-          <input type="range" min="1" max="100" value="50" class="scale__line">
+          <input type="range" min="1" name="scale" id="form_scale"  max="100" value="50" class="scale__line">
         </div>
         <label class="form__field file _file">
-          <input class="form__file file__input" type="file" placeholder="Прикрепить файл" name="" id="">
+          <input class="form__file file__input" name="form_file" type="file" placeholder="Прикрепить файл" name="" id="">
           <i class="file__icon icon-file"></i>
           <span class="file__text">Прикрепить файл</span>
         </label>
-        <button type='button' class="form__btn btn btn_blue _submit">Отправить</button>
-        <!-- <button type="submit" class="form__btn btn btn_blue _submit">Отправить</button> -->
+        <button type="submit" class="form__btn btn btn_blue _submit">Отправить</button>
       </form>
     </div>
   </section>
